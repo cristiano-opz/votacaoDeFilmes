@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Votação de Filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="background-nav">
+            <nav class="nav-bar">
+                <ul class="nav-items">
+                    <li>
+                        <a class="nav-logo" href="index.html">Vote!</a>
+                    </li>
+                    <li>
+                        <input type="text" id="search" placeholder="Pesquisar...">
+                    </li>
+                    <li>
+                        <a href="pages/cadastro.html">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="pages/votos.html">Votos</a>
+                    </li>
+            
+                    <div class="mobile-menu" onclick="clickMenu()">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </ul>
+                <ul class="nav-items">
+                <menu>
+                    <ul id="content">
+                        <li><a id="items" href="index.html">Vote!</a></li>
+                        <li><a id="items" href="pages/cadastro.html">Cadastro</a></li>
+                        <li><a id="items" href="pages/votos.html">Votos</a></li>
+                    </ul>
+                </menu>
+                </ul>
+          </nav>
+    </div>
+
+    <div class="movies">
+
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_FMjpg_UX1000.jpg" alt="Banner do filme do Superman de 2025">
+            <h1>Superman (2025)</h1>
+            <h2>Genêro: Super-herói</h2>
+            <p>Superman embarca em uma jornada para reconciliar sua herança kryptoniana com sua criação humana.</p>
+            <button class="like"></button>
+            <button class="unlike"></button>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Arial', 'sans-serif';
+  background: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+a { 
+  padding: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: smaller;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  justify-content: center;
+}
+nav-bar {
+  display: flex;
+  width: 100%;
+}
+#search {
+  height: 4vh;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-left: 15px;
+}
+.nav-items li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.nav-bar a {
+  color: #ffffff !important;
+}
+.nav-bar a:hover {
+  background-color:#96b7ff52;
+  border-radius:5px;
+  color: #3d83ad !important;
+}
+.nav-bar a:active {
+  color: #3d83ad !important;
+  font-weight: bold;
+}
+.nav-logo {
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.mobile-menu div {
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  margin: 8px;
+}
+.mobile-menu {
+  display: none;
+}
+#content {
+  display: none;
+}
+#content {
+list-style-type: none;
+}
+#items {
+  font-size: small;
+  display: none;
+  padding: 5px;
+  text-align: center;
+  background-color: #a3ff7f5d;
+  color: white;
+  box-shadow: black 1px 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+menu {
+  margin: 10px;
+}
+body .background-nav {
+  background-color: #5e5e5efd;
+}
+
+
+/*movies section*/
+
+.movies {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+.movie {
+  box-shadow: #8f8f8f 5px 5px;
+  border: solid 1px black;
+  width: 20vw;
+  padding: 5px;
+  text-align: center;
+}
+.movie img {
+  width: 100%;
+  height: 20vh;
+}
+.movie h1 {
+  margin: 0px 25px 0px;
+  font-size: 36px;
+  color: #0d378d;
+}
+.movie h2 {
+  font-size: 22px;
+  color: #0f40a1;
+}
+.movie p {
+  font-size: 8px;
+  color: #2078af;
+  width: 100%;
+}
+
+
+/*for smartphones*/
+@media (max-width: 999px) {
+  .mobile-menu {
+    display: block;
+    margin-right: 30px;
+  }
+  #items {
+    display: block;
+  }
+  a {
+    display: none;
+  }
+}
+
