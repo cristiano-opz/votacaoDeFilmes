@@ -4,42 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Votação de Filmes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <ul class="nav-items">
+    <div class="background-nav">
+        <nav class="nav-bar">
             <ul class="nav-items">
                 <li>
-                    <a class="nav-logo" href="index.html">Vote!</a>
+                    <a class="nav-logo" href="../index.html">Vote!</a>
                 </li>
                 <li>
                     <input type="text" id="search" placeholder="Pesquisar...">
                 </li>
                 <li>
-                    <a href="">Cadastro</a>
+                    <a class="active" href="cadastro.html">Cadastro</a>
                 </li>
                 <li>
-                    <a href="">Votos</a>
+                    <a href="votos.html">Votos</a>
                 </li>
+                <div class="mobile-menu" onclick="clickMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </ul>
-            
-        <div class="mobile-menu" onclick="clickMenu()">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <menu>
-            </ul>
-                <ul>
-                    <li><a id="items" href="index.html">Vote!</a></li>
-                    <li><a id="items" href="">Cadastro</a></li>
-                    <li><a id="items" href="">Votos</a></li>
+            <ul class="menu-area">
+                <ul id="content">
+                    <li><a class="items" href="../index.html">Vote!</a></li>
+                    <li><a class="items" href="cadastro.html">Cadastro</a></li>
+                    <li><a class="items" href="votos.html">Votos</a></li>
                 </ul>
-            </menu>
-        
-    </nav>
+            </ul>
+        </nav>
+    </div>
 
-    <script src="js/script.js"></script>
+    <form>
+        <h1>Cadastro</h1>
+
+        <div class="form-area">
+            <label for="imagem">URL da imagem do Filme:</label>
+            <input type="text" id="imagem">
+        </div>
+        <div class="form-area">
+            <label for="titulo">Título do Filme:</label>
+            <input type="text" id="titulo">
+        </div>
+        <div class="form-area">
+            <label for="genero">Gênero do Filme:</label>
+            <input type="text" id="genero">
+        </div>
+        <div class="form-area">
+            <label for="descricao">Sinopse do Filme:</label>
+            <input type="text" id="descricao">
+        </div>
+
+        <div class="submitOrClear">
+            <button onclick="submit()">Enviar</button>
+            <button onclick="clear()">Limpar</button>
+        </div>
+
+    </form>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
