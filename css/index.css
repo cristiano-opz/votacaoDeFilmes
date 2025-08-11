@@ -136,14 +136,14 @@ body .background-nav {
 .like {
   border-radius: 10px;
   border: solid 1px 1px white;
-  font-size: small;
+  font-size: 26px;
   color: white;
   background-color: green;
 }
 .unlike {
   border-radius: 10px;
   border: solid 1px 1px white;
-  font-size: small;
+  font-size: 26px;
   color: white;
   background-color: red;
 }
