@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Votação de Filmes</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="background-nav">
+        <nav class="nav-bar">
+            <ul class="nav-items">
+                <li>
+                    <a class="nav-logo" href="index.html">Vote!</a>
+                </li>
+                <li>
+                    <input type="text" id="search" placeholder="Pesquisar...">
+                </li>
+                <li>
+                    <a href="pages/cadastro.html">Cadastro</a>
+                </li>
+                <li>
+                    <a href="pages/votos.html">Votos</a>
+                </li>
+                <div class="mobile-menu" onclick="clickMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </ul>
+            <ul class="menu-area">
+                 <ul id="content">
+                    <li><a class="items" href="index.html">Vote!</a></li>
+                    <li><a class="items" href="pages/cadastro.html">Cadastro</a></li>
+                    <li><a class="items" href="pages/votos.html">Votos</a></li>
+                </ul>
+            </ul>
+        </nav>
+     </div>
+
+    
+    <div class="movies">
+
+        <div class="movie" data-id="1">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_FMjpg_UX1000.jpg" alt="Banner do filme Superman de 2025">
+            <h1>Superman (2025)</h1>
+            <h2>Gênero: Super-herói</h2>
+            <p>Superman embarca em uma jornada para reconciliar sua herança kryptoniana com sua criação humana.</p>
+            <button class="like">Gostei: 0</button>
+            <button class="unlike">Não gostei: 0</button>
+        </div>
+
+         <div class="movie" data-id="2">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzg2ODkzZTktNTY2Ni00Yjg0LTk4OWEtMTlhNTVlZTQ4NTdkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Banner do filme Ainda Estou aqui de 2024">
+            <h1>Ainda Estou Aqui (2024)</h1>
+            <h2>Gênero: Drama</h2>
+            <p>Uma mulher casada com um ex-político durante a ditadura militar no Brasil é obrigada a se reinventar e a traçar um novo destino para si e filhos.</p>
+            <button class="like">Gostei: 0</button>
+            <button class="unlike">Não gostei: 0</button>
+        </div>
+
+         <div class="movie" data-id="3">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDRmNzMzZGYtZDdiMy00ZjNiLThjYzUtODMzY2QxY2VkZmIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Banner do filme A Lavanderia de 2019">
+            <h1>A Lavanderia (2019)</h1>
+            <h2>Gênero: Comédia</h2>
+            <p>Uma viúva investiga um fraude fiscal que acaba levando ela até um par de advogados que exploram o sistema financeiro global.</p>
+            <button class="like">Gostei: 0</button>
+            <button class="unlike">Não gostei: 0</button>
+        </div>
+
+         <div class="movie" data-id="4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR08-sRf7CgTYcG2e0AhqdCZxAhXsvRcZeDvg&s" alt="Banner do filme Divertidamente de 2024">
+            <h1>Divertida Mente 2 (2024)</h1>
+            <h2>Gênero: Fantasia</h2>
+            <p>Enquanto Riley tenta se adaptar à adolescência e às novas emoções, suas antigas emoções tentam se adaptar à possibilidade de serem substituídas.</p>
+            <button class="like">Gostei: 0</button>
+            <button class="unlike">Não gostei: 0</button>
+        </div>
+
+         <div class="movie" data-id="5">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGI1ODFjZGItYjM4Ni00ODMwLTgyM2QtOGM2MGZhZGZiOGIzXkEyXkFqcGc@._V1_.jpg" alt="Banner do filme Sociedade dos Poetas Mortos de 1989">
+            <h1>Sociedade dos Poetas Mortos (1989)</h1>
+            <h2>Gênero: Drama</h2>
+            <p>O professor de Inglês John Keating inspira a seus estudantes a ver a poesia duma perspectiva diferente.</p>
+            <button class="like">Gostei: 0</button>
+            <button class="unlike">Não gostei: 0</button>
+        </div>
+
+        <div class="movie" data-id="6">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjgwMjFkYzctNmRiZS00MmI4LTg5ODEtNmZkYTdjOTFiNDc0XkEyXkFqcGc@._V1_.jpg" alt="Banner do filme Sexto Sentido de 1999">
+            <h1>O Sexto Sentido</h1>
+            <h2>Gênero: Mistério</h2>
+            <p>Um menino que consegue se comunicar com espíritos encontra ajuda de um psicólogo.</p>
+            <button class="like">Gostei: 0</button>
+            <button class="unlike">Não gostei: 0</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
