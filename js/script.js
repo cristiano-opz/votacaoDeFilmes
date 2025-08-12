@@ -48,8 +48,11 @@ function carregarDados() {
     const filmesSalvos = localStorage.getItem('filmes');
     const votosSalvos = localStorage.getItem('votosGeral');
 
-    if (filmesSalvos) filmes = JSON.parse(filmesSalvos);
-    else filmes = [];
+    if (filmesSalvos) {
+        filmes = JSON.parse(filmesSalvos);
+    } else {
+        initDataHtml();
+    }
     if (votosSalvos) votosGeral = JSON.parse(votosSalvos);
     else votosGeral = { positivos: 0, negativos: 0 };
     showMovies();
@@ -75,6 +78,7 @@ function votar(filmeId, tipoVoto) {
     }
     salvarDados();
     attScreen();
+
 }
  
 function attScreen() {
@@ -104,8 +108,9 @@ function attScreen() {
 //junto da demonstração dos likes
 document.addEventListener('DOMContentLoaded', function() {
     carregarDados();
-    attScreen();
     showMovies();
+    attScreen();
+    configBtns();
     configSearch();
 
     //cada botão de like eh descoberto o filme q ele pertence
@@ -156,11 +161,23 @@ if (filme.id <= 6) return;
             <h1>${filme.titulo}</h1>
             <h2>Gênero: ${filme.genero}</h2>
             <p>${filme.descricao}</p>
-<button class="like" onclick="votar(${filme.id}, 'gostei')">Gostei: ${filme.gostei}</button>
-<button class="unlike" onclick"votar(${filme.id}, 'naoGostei')">Não gostei: ${filme.naoGostei}</button>
-        `;
+            <button class="like">Gostei: ${filme.gostei}</button>
+            <button class="unlike">Não gostei: ${filme.naoGostei}</button>
+`;
         //por fim, enviamos toda essa config para container
         container.appendChild(divFilme);
+    });
+}
+
+function configBtns() {
+    document.querySelectorAll('.like').forEach(btn => {
+        const filmeId = parseInt(btn.closest('.movie').dataset.id);
+        btn.onclick = () => votar(filmeId, 'gostei');
+    });
+    
+    document.querySelectorAll('.unlike').forEach(btn => {
+        const filmeId = parseInt(btn.closest('.movie').dataset.id);
+        btn.onclick = () => votar(filmeId, 'naoGostei');
     });
 }
 

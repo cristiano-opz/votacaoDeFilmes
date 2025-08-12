@@ -14,7 +14,7 @@ a {
   padding: 10px;
   text-decoration: none;
   font-weight: bold;
-  font-size: smaller;
+  font-size: 22px;
   color: #ffffff;
 }
 ul {
@@ -30,7 +30,7 @@ nav-bar {
 }
 #search {
   height: 4vh;
-  font-size: 12px;
+  font-size: 20px;
   border-radius: 10px;
   margin-right: 15px;
 }
@@ -53,7 +53,7 @@ nav-bar {
   color: #000000;
 }
 .nav-logo {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -72,7 +72,7 @@ nav-bar {
 
 }
 .items {
-  font-size: small;
+  font-size: 22px;
   display: none;
   padding: 0px;
   text-align: center;
